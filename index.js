@@ -51,7 +51,7 @@ inquirer
   .then((answers) => {
     const content = generate(answers);
 
-    fs.writeFile('index.html', content, (err) =>
+    fs.writeFile('README.md', content, (err) =>
       err ? console.log(err) : console.log('Successfully created index.html!')
     );
   });
